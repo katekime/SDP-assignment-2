@@ -13,10 +13,13 @@ public class Main {
             Team redTeam = new Team(redFactory);
             redTeam.startBattle();
         }
-        else {
+        else if(teamColor.equalsIgnoreCase("Blue")){
             PersonFactory blueFactory = new BlueTeamFactory();
             Team blueTeam = new Team(blueFactory);
             blueTeam.startBattle();
+        }
+        else {
+            System.out.println("There is no team color");
         }
 
     }

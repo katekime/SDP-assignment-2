@@ -2,11 +2,11 @@ import PersonFactory.PersonFactory;
 import PersonInterfaces.*;
 
 public class Team {
-    private Archer archer;
-    private Warrior warrior;
-    private Tank tank;
-    private Healer healer;
-    private Mage mage;
+    private final Archer archer;
+    private final Warrior warrior;
+    private final Tank tank;
+    private final Healer healer;
+    private final Mage mage;
 
     public Team(PersonFactory factory) {
         this.archer = factory.createArcher();
