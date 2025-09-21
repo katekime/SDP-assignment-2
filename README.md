@@ -41,11 +41,15 @@ Team Class:
 Accepts a PersonFactory to initialize all roles.
 Provides methods like ArcherSkills(), WarriorSkills(), etc., which call the abilities of each role.
 The startBattle() method simulates a fight by invoking all role abilities in sequence.
+
 4. Execution Flow
+
 A team is created with a chosen factory, e.g., new Team(new BlueTeamFactory()).
 The Team constructor initializes all characters through the factory.
 When startBattle() is called, it prints out all character actions, simulating the start of a battle.
+
 5. Strengths
+
 Clear demonstration of the Abstract Factory pattern.
 Well-structured code with logical separation of interfaces, factories, and implementations.
 Easily extendable: new teams or new roles can be added without breaking existing code.
