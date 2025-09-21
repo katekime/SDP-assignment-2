@@ -5,14 +5,14 @@ import RedTeam.RedArcher;
 import PersonFactory.PersonFactory;
 import RedTeam.*;
 
-public class ReadTeamFactory implements PersonFactory {
+public class RedTeamFactory implements PersonFactory {
     @Override
     public Archer createArcher() {
         return new RedArcher();
     }
     @Override
     public Warrior createWarrior() {
-        return new RedWarrior() {};
+        return new RedWarrior();
     }
     @Override
     public Mage createMage() {

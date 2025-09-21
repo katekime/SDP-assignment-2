@@ -9,7 +9,7 @@ public class Main {
         String teamColor = sc.nextLine();
 
         if(teamColor.equalsIgnoreCase("Red")){
-            PersonFactory redFactory = new ReadTeamFactory();
+            PersonFactory redFactory = new RedTeamFactory();
             Team redTeam = new Team(redFactory);
             redTeam.startBattle();
         }
